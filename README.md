@@ -36,7 +36,7 @@ The app will be running on http://localhost:5171.
 * Edit a Task: Click on the task you want to edit, make your changes, and save.
 * Delete a Task: Click the delete icon next to the task you wish to remove.
 # Project Structure
-
+```bash
 ├── public
 │   ├── index.html
 │   └── ...
@@ -50,6 +50,7 @@ The app will be running on http://localhost:5171.
 │   └── ...
 ├── package.json
 └── README.md
+```
 * public/: Contains the base HTML file and other static assets.
 * src/: Contains the React components and entry point of the application.
 *components/: Holds all reusable components such as TodoList and TodoItem.
