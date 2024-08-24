@@ -64,10 +64,10 @@ The app will be running on http://localhost:5171.
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
 * Fork the repository.
-Create a new branch (git checkout -b feature-branch-name).
-Make your changes and commit them (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-branch-name).
-Open a Pull Request.
+* Create a new branch (git checkout -b feature-branch-name).
+* Make your changes and commit them (git commit -m 'Add some feature').
+* Push to the branch (git push origin feature-branch-name).
+* Open a Pull Request.
 # License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
