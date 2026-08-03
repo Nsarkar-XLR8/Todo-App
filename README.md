@@ -1,82 +1,149 @@
-# Todo-App
-Making a Todo App using React.js Library
-A simple and intuitive Todo App built using the React.js library. This application helps users manage their daily tasks efficiently by allowing them to add, edit, and delete tasks.
+# ⚡ TaskPulse Enterprise - Task & Workspace Suite
 
-# Table of Contents
-Features
-* Demo
-* Installation
-* Usage
-* Project Structure
-* Technologies Used
-* Contributing
-* License
-# Features
-* Add Tasks: Users can easily add new tasks to their todo list.
-* Edit Tasks: Tasks can be edited to update the details.
-* Delete Tasks: Unwanted tasks can be removed from the list.
-* Responsive Design: The app is fully responsive and works on all device sizes.
-* Local Storage: Tasks are saved in the browser's local storage, so they persist between sessions.
-Demo
-Check out the live demo of the Todo App here.
-# Installation
-To get started with the Todo App, follow these steps:
+[![React Version](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-4.5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Design System](https://img.shields.io/badge/Design_System-CSS_Tokens-00C7B7)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)](#)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-* Clone the repository:
-git clone https://github.com/your-username/todoapp.git
-cd todoapp
-* Install the dependencies:
+**TaskPulse Enterprise** is an enterprise-grade, high-velocity task and operations management platform. Engineered for teams and power users, it combines a responsive design system with keyboard-driven controls, real-time analytics, multi-workspace switching, and offline persistence.
 
-npm install
-* Run the app:
-npm start
-The app will be running on http://localhost:5171.
+---
 
-# Usage
-* Add a Task: Type your task in the input field and press the "Add" button.
-* Edit a Task: Click on the task you want to edit, make your changes, and save.
-* Delete a Task: Click the delete icon next to the task you wish to remove.
-# Project Structure
+## 🌟 Key Features
+
+### 🏢 Multi-Workspace Contexts
+- Switch between **Engineering**, **Personal & Growth**, and **Operations & Product** workspaces seamlessly.
+- State, metrics, and categories isolate automatically per workspace.
+
+### 🎯 Priority Matrix & SLA Tracking
+- **Eisenhower Priority System**: Assign tasks to **🔴 P1 Urgent**, **🟠 P2 High**, **🔵 P3 Medium**, or **⚪ P4 Low**.
+- **Overdue SLA Alerts**: Automatic calculation of target due dates and real-time SLA breach indicators.
+- **Effort Estimation**: Track estimated story hours per task and sum active work across projects.
+
+### 🚀 Command Palette & Keyboard Hub (`Ctrl + K`)
+- Instant search modal triggered by `Ctrl + K` or search bar.
+- Rapidly query tasks by title, category, or task ID (`TASK-101`).
+
+### 📊 Real-Time Productivity Analytics
+- KPI cards monitoring **Completion Rate %**, **Total Active Effort (Hours)**, **SLA Breach Count**, and **Velocity Streak**.
+
+### 📋 Interactive Subtask Checklists
+- Break tasks into actionable subtask steps.
+- Visual subtask progress percentage bar (`2/3 completed (67%)`).
+
+### 🎨 Design System & Theme Engine
+- **Dark Mode / Light Mode**: Dynamic CSS Custom Properties (`data-theme="dark"` or `"light"`) with system preference fallback.
+- **Responsive Layout**: Mobile-first responsive layout tailored for mobile phones, tablets, and desktop workstations.
+
+### 🛡️ Data Integrity & Resilience
+- **Offline LocalStorage Sync**: Safe automatic persistence without backend lock-in.
+- **Undo Engine**: 1-click restoration for accidental deletions or bulk actions.
+- **Activity Audit Trail**: History of task creations, updates, completions, and deletions recorded in an audit drawer.
+- **JSON Export & Import**: Backup task datasets instantly.
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **UI Library** | React 18 | Declarative component hierarchy and hooks architecture |
+| **Build System** | Vite 4.5 | Lightning-fast HMR and optimized production bundle |
+| **Icons** | Lucide React | High-grade SVG iconography |
+| **Styling** | CSS Variables | Dynamic theme tokens, glassmorphism, and responsive breakpoints |
+| **State** | React Reducer + Hooks | Centralized action dispatching and undo stack management |
+| **Typography** | Plus Jakarta Sans | Modern enterprise sans-serif font |
+
+---
+
+## ⚡ Keyboard Shortcuts
+
+| Shortcut | Action |
+| :--- | :--- |
+| `Ctrl + K` / `Cmd + K` | Open Command Palette |
+| `Esc` | Close Command Palette or Audit Log Drawer |
+| `Enter` | Submit Task or Subtask |
+| `Space` / `Click` | Toggle Task Completion |
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+- **Node.js**: `v16.0.0` or higher
+- **npm**: `v8.0.0` or higher
+
+### Installation & Local Setup
+
 ```bash
-├── public
-│   ├── index.html
-│   └── ...
-├── src
-│   ├── components
-│   │   ├── TodoList.jsx
-│   │   ├── TodoItem.jsx
-│   │   └── ...
-│   ├── App.jsx
-│   ├── index.js
-│   └── ...
-├── package.json
-└── README.md
+# 1. Clone the repository
+git clone https://github.com/your-username/todo-app.git
+
+# 2. Navigate to project directory
+cd todoapp
+
+# 3. Install dependencies
+npm install
+
+# 4. Launch development server
+npm run dev
 ```
-* public/: Contains the base HTML file and other static assets.
-* src/: Contains the React components and entry point of the application.
-*components/: Holds all reusable components such as TodoList and TodoItem.
-* App.jsx: The root component that ties everything together.
-* index.js: Entry point for the React app.
-# Technologies Used
-* React.js: JavaScript library for building user interfaces.
-* HTML5 & CSS3: Markup and styling for the app.
-* JavaScript (ES6+): Logic and functionality of the app.
-* Vite: Fast frontend build tool.
-# Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-* Fork the repository.
-* Create a new branch (git checkout -b feature-branch-name).
-* Make your changes and commit them (git commit -m 'Add some feature').
-* Push to the branch (git push origin feature-branch-name).
-* Open a Pull Request.
-# License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+The application will launch at `http://localhost:5173`.
 
-Feel free to customize this README to better fit your project.
+### Production Build
 
+```bash
+# Bundle for production deployment
+npm run build
 
+# Preview production build locally
+npm run preview
+```
 
+---
 
+## 📁 Project Architecture
 
+```
+todoapp/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx          # Top navbar, workspace switcher & controls
+│   │   ├── StatsOverview.jsx   # Metrics, velocity & SLA cards
+│   │   ├── TaskForm.jsx        # Rich task & subtask builder
+│   │   ├── TaskFilters.jsx     # View tabs, search & category chips
+│   │   ├── TaskList.jsx        # Grouped task container & bulk actions
+│   │   ├── TaskItem.jsx        # Enterprise task card & subtask panel
+│   │   ├── CommandPalette.jsx  # Ctrl+K modal overlay
+│   │   ├── ActivityLog.jsx     # Audit log drawer
+│   │   └── Toast.jsx           # Action alerts with 1-click Undo
+│   ├── hooks/
+│   │   ├── useTodos.js         # Reducer state container & business logic
+│   │   ├── useTheme.js         # Theme switcher hook
+│   │   └── useKeyboard.js      # Global hotkey mapping hook
+│   ├── services/
+│   │   ├── storageService.js   # LocalStorage & demo seed data
+│   │   └── auditService.js     # Enterprise activity logger
+│   ├── styles/
+│   │   ├── variables.css       # Design tokens & themes
+│   │   └── index.css           # Base reset & mobile responsive layout
+│   ├── App.jsx                 # Root application wrapper
+│   └── main.jsx                # DOM entrypoint
+├── package.json
+├── vite.config.js
+└── index.html
+```
 
+---
+
+## 🔒 Data Privacy & Offline First
+
+TaskPulse Enterprise stores all workspace data locally using `localStorage`. No external network requests are made for data storage, ensuring full privacy and zero cloud latency.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

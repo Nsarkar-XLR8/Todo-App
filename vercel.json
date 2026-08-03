@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd todoapp && npm install && npm run build",
+  "outputDirectory": "todoapp/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
